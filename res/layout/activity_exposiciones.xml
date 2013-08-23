@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro" >
+    
+    <ImageView
+        android:id="@+id/expos_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/LogoAppDesc"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/expos_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="@color/azul_claro"
+        android:textSize="@dimen/others_appname_size"
+        tools:context=".ExposicionesActivity" />
+
+    <TextView
+        android:id="@+id/expos_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expos_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/general_expo_del_dia"
+        android:textColor="@color/naranja"
+        android:textSize="@dimen/general_header2"
+        tools:context=".ExposicionesActivity" />
+    
+    <Button
+        android:id="@+id/button_expos_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/button_expos_cerrar_sesion"
+        android:layout_toLeftOf="@+id/button_expos_cerrar_sesion"
+        android:drawableStart="@drawable/ic_menu_help_holo_light"
+         />
+
+    <Button
+        android:id="@+id/button_expos_cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/expos_app_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/general_cerrar_sesion" />
+
+    <ScrollView
+        android:id="@+id/scrollView_expos"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:maxHeight="300dp"
+        android:maxWidth="350dp"
+        android:orientation="vertical"
+        android:background="@drawable/border" >
+
+        <TableLayout
+            android:id="@+id/tabla_expos"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/negro" >
+	
+	        
+	    </TableLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

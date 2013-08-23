@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro" >
+
+    <TextView
+        android:id="@+id/login_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/app_name"
+        android:textColor="@color/azul_claro"
+        android:textSize="@dimen/login_appname_size"
+        tools:context=".Login" />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/LogoAppDesc"
+        android:src="@drawable/logo2_med" />
+
+    <EditText
+        android:id="@+id/editText_login_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_app_name"
+        android:layout_alignRight="@+id/login_logo"
+        android:layout_below="@+id/login_logo"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="@string/editText_login_token_hint"
+        android:textColor="@color/azul_claro"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_login_entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_login_token"
+        android:layout_alignRight="@+id/login_app_name"
+        android:layout_alignTop="@+id/editText_login_token"
+        android:layout_toRightOf="@+id/editText_login_token"
+        android:text="@string/button_login_entrar" />
+
+    <Button
+        android:id="@+id/button_login_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/button_login_salir" />
+
+    <Button
+        android:id="@+id/button_login_creditos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/button_creditos" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro" >
+
+    <ImageView
+        android:id="@+id/generarPDF_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/LogoAppDesc"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/generarPDF_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="@color/azul_claro"
+        android:textSize="@dimen/others_appname_size"
+        tools:context=".GenerarPDFActivity" />
+
+    <TextView
+        android:id="@+id/generarPDF_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generarPDF_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/generarPDF_titulo"
+        android:textColor="@color/naranja"
+        android:textSize="@dimen/general_header2"
+        tools:context=".GenerarPDFActivity" />
+    
+    <Button
+        android:id="@+id/button_generarPDF_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/button_generarPDF_cerrar_sesion"
+        android:layout_toLeftOf="@+id/button_generarPDF_cerrar_sesion"
+        android:drawableStart="@drawable/ic_menu_help_holo_light"
+         />
+
+    <Button
+        android:id="@+id/button_generarPDF_cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/generarPDF_app_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/general_cerrar_sesion" />
+
+    <TextView
+        android:id="@+id/generarPDF_advertencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="350dp"
+        android:text="@string/generarPDF_advertencia"
+        android:textColor="@color/naranja"
+        android:textSize="@dimen/general_header3"
+        tools:context=".GenerarPDFActivity" />
+
+    
+
+    <Button
+        android:id="@+id/button_generarPDF_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/generarPDF_advertencia"
+        android:layout_centerVertical="true"
+        android:drawableRight="@drawable/ic_menu_save"
+        android:textSize="@dimen/general_no_text" />
+
+    <EditText
+        android:id="@+id/editText_generarPDF_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@+id/button_generarPDF_guardar"
+        android:ems="10"
+        android:hint="@string/editText_generarPDF_nombre"
+        android:minWidth="450dp"
+        android:textColor="@color/azul_claro" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_generarPDF_guardar"
+        android:layout_alignLeft="@+id/editText_generarPDF_nombre"
+        android:layout_marginBottom="40dp"
+        android:text="@string/EnvioDePDFEmail" 
+        android:textColor="@color/azul_claro" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignLeft="@+id/generarPDF_titulo"
+        android:layout_alignRight="@+id/generarPDF_app_name"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hintEmail"
+        android:minWidth="450dp"
+        android:textColor="@color/azul_claro" />
+
+</RelativeLayout>

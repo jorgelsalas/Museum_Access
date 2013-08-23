@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_appname_size">50dp</dimen>
+    <dimen name="login_boton_size">20dp</dimen>
+    <dimen name="others_appname_size">40dp</dimen>
+    <dimen name="general_header2">30dp</dimen>
+    <dimen name="general_header1">40dp</dimen>
+    <dimen name="general_header3">20dp</dimen>
+    <dimen name="general_header4">12dp</dimen>
+    <dimen name="general_no_text">0dp</dimen>
+</resources>

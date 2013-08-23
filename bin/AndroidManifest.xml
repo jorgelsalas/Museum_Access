@@ -1,0 +1,157 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name=".Aplicacion"
+    package="com.example.museos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/logo2_med"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".ExposicionesActivity"
+            android:label="@string/title_activity_exposiciones"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".InfoMuseoActivity"
+            android:label="@string/title_activity_info_museo"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".ResultadosActivity"
+            android:label="@string/title_activity_resultados"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".GenerarPDFActivity"
+            android:label="@string/title_activity_generar_pdf"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".ElegirPlantillaActivity"
+            android:label="@string/title_activity_elegir_plantilla"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".ResultadosEspecificosActivity"
+            android:label="@string/title_activity_resultados_especificos"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".FormatosActivity"
+            android:label="@string/title_activity_formatos"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".TextoActivity"
+            android:label="@string/title_activity_texto"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".ImagenesActivity"
+            android:label="@string/title_activity_imagenes"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".VideosActivity"
+            android:label="@string/title_activity_videos"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".AudioActivity"
+            android:label="@string/title_activity_audio"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".Reproduccion_A_V_Activity"
+            android:label="@string/title_activity_reproduccion__a__v_"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+        <activity
+            android:name=".ReproduccionTextoActivity"
+            android:label="@string/title_activity_reproduccion_texto"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+
+        <service android:name="ServicioIntent" >
+        </service>
+
+        <activity
+            android:name=".CreditosApp"
+            android:label="@string/title_activity_creditos_app"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.museos.Login" />
+        </activity>
+    </application>
+
+</manifest>

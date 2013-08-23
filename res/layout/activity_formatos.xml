@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro" >
+
+    <ImageView
+        android:id="@+id/formatos_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/LogoAppDesc"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/formatos_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="@color/azul_claro"
+        android:textSize="@dimen/others_appname_size"
+        tools:context=".FormatosActivity" />
+
+    <TextView
+        android:id="@+id/formatos_instrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formatos_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/formatos_instrucciones"
+        android:textColor="@color/naranja"
+        android:textSize="@dimen/general_header2"
+        tools:context=".ExposicionesActivity" />
+    
+    <Button
+        android:id="@+id/button_formatos_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/button_formatos_cerrar_sesion"
+        android:layout_toLeftOf="@+id/button_formatos_cerrar_sesion"
+        android:drawableStart="@drawable/ic_menu_help_holo_light"
+         />
+
+    <Button
+        android:id="@+id/button_formatos_cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/formatos_app_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/general_cerrar_sesion" />
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/formatos_instrucciones"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/formatos_instrucciones"
+        android:stretchColumns="*"
+        android:layout_marginTop="20dp"
+        android:background="@color/negro" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/negro" >
+
+            <ImageView
+                android:id="@+id/imageView_formato1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/formato1"
+                android:layout_gravity="center"
+                android:contentDescription="@string/formatos_descripcion_formato1" />
+
+            <ImageView
+                android:id="@+id/imageView_formato2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/formato2"
+                android:layout_gravity="center"
+                android:contentDescription="@string/formatos_descripcion_formato2" />
+
+            <ImageView
+                android:id="@+id/imageView_formato3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/formato3"
+                android:layout_gravity="center"
+                android:contentDescription="@string/formatos_descripcion_formato3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <RadioButton
+                android:id="@+id/radio_formatos_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_formatos_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_formatos_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+        </TableRow>
+        
+        
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button_formatos_elegir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_formatos_elegir_formato"
+                android:layout_column="1"
+                android:layout_marginTop="40dp" />
+
+        </TableRow>
+
+        
+        
+    </TableLayout>
+
+</RelativeLayout>

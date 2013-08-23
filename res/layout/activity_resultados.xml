@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/negro" >
+
+    
+
+    <TextView
+        android:id="@+id/result_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="@color/azul_claro"
+        android:textSize="@dimen/others_appname_size"
+        tools:context=".ResultadosActivity" />
+
+    
+
+    <Button
+        android:id="@+id/button_result_cerrar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/general_cerrar_sesion" />
+
+    
+
+    <Button
+        android:id="@+id/button_result_expo_del_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        
+        android:layout_alignParentTop="true"
+        android:drawableRight="@drawable/ic_menu_my_calendar"
+        android:drawableLeft="@drawable/ic_menu_my_calendar"
+        android:text="@string/general_expo_del_dia_corto"
+         />
+
+    
+
+    <Button
+        android:id="@+id/button_result_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_result_filtrar"
+        android:drawableLeft="@drawable/ic_menu_moreoverflow"
+        android:drawableRight="@drawable/ic_menu_moreoverflow"
+        android:minWidth="256dp"
+        android:text="@string/resultados_PDF" />
+
+    <Button
+        android:id="@+id/button_result_formato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_result_pdf"
+        android:drawableLeft="@drawable/ic_menu_find_holo_dark"
+        android:drawableRight="@drawable/ic_menu_find_holo_dark"
+        android:minWidth="200dp"
+        android:text="@string/resultados_formato" />
+
+    <Button
+        android:id="@+id/button_result_nueva_busqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_result_formato"
+        android:drawableLeft="@drawable/ic_action_search"
+        android:drawableRight="@drawable/ic_action_search"
+        android:minWidth="200dp"
+        android:text="@string/resultados_nueva_busqueda" />
+
+    <Button
+        android:id="@+id/button_result_filtrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true"
+        android:minWidth="257dp"
+        android:drawableLeft="@drawable/ic_menu_find"
+        android:drawableRight="@drawable/ic_menu_find"
+        android:text="@string/resultados_filtrar" />
+    
+    <RelativeLayout 
+        android:id="@+id/contenedor_resultados"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@drawable/border"
+    	android:layout_above="@+id/button_result_pdf"
+    	android:layout_below="@+id/result_app_name"
+    	 >
+        
+	    
+        
+	</RelativeLayout>
+
+    <Button
+        android:id="@+id/button_resultados_ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_result_cerrar_sesion"
+        android:drawableStart="@drawable/ic_menu_help_holo_light"
+         />
+
+</RelativeLayout>
